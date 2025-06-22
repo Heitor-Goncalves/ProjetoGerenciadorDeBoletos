@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Boleto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Boleto</h1>
+        <form id="barcodeForm">
+            <div class="form-group">
+                <label for="dataVencimento">Data de Vencimento:</label>
+                <input type="date" id="dataVencimento" required>
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor (R$):</label>
+                <input type="number" id="valor" step="0.01" min="0" required>
+            </div>
+            <button type="submit">Gerar Boleto</button>
+        </form>
+        <div id="result" class="hidden">
+            <div class="barcode-container">
+                <img id="barcodeImage" alt="Código de Barras">
+                <p id="barcodeText" class="barcode-text"></p>
+                <button id="validateBtn" class="hidden" type="button">Validar Código de Barras</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
