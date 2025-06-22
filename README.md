@@ -35,7 +35,3 @@ Utiliza a biblioteca **BarcodeLib** para criar imagens de código de barras.
 
 Responsável por **validar se o código de barras de um boleto é válido** de acordo com as regras criadas
 
----
-
-## 📄 Estrutura do projeto
-
